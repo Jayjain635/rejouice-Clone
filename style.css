@@ -1,0 +1,258 @@
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+  }
+  @font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+ 
+.page1{
+height: 100vh;
+width: 100%;
+background-color: aqua;
+}
+/*Absolute:-jab bhi absolute use karta hai to vo property hava me ud jati hai 
+relative karta hai to bg me jo hoga vo fix hota hai , if z-index increase kara ga relative ka to vo aage aa jaya ga
+*/
+.cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate( -50%,-50%);
+}
+.cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+.page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: white;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+}
+nav h3{
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-family: nb;
+}
+nav h4{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.page1-content h1{
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 27vw;
+    line-height: 27vw;
+}
+.page1-content h1 span{
+    font-family: rejoy;
+    display: inline-block;
+}
+/* page2 */
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background: #FAF8F3; */
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+.page2-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vw;
+    padding-bottom: 1.2vw;
+    border-bottom: 1px solid black;
+}
+.page2-head h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+.page2-head h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+.page2-part2{
+    overflow: hidden;
+}
+.page2-part2 h2{
+    font-weight: 500;
+    font-size: 4.2vw;
+    width : 95%;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+.page3-top{
+    text-align: center;
+}
+.page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.page3-top h4 span{
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+.page3-top h2{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.page3-element{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 8vw;
+    justify-content: space-between;
+    background: #ffffff;
+}
+.page3-element .box{
+    height: 100%;
+    width: 32.5%;
+    background-color: aqua;
+    position: relative;
+}
+.page3-element .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page3-element .box img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    transition: all linear 0.8s;
+}
+.page3-element .box:hover img{
+    opacity: 0;
+}
+
+.page5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background: #000; */
+    justify-content: center;
+}
+.page5 video{
+    height: 100%;
+}
+.page5 svg{
+    position: absolute;
+    height: 60%;
+}
+
+.page7{
+    height: 100vh;
+    width: 100%;
+    /* background: #c63030; */
+    position: relative;
+    padding: 4vw 0;
+}
+.page7 h1{
+    font-size: 10vw;
+    font-family: rejoy;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+}
+.swiperdiv{
+    height: 60vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    margin-top: -14%;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+   /* width: 400px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 18%;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    z-index: 99;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .loader h3{
+    font-size: 2vw;
+    font-weight: 2vw;
+  }
